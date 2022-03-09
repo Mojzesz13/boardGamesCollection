@@ -22,8 +22,11 @@ import {GameItemComponent} from "./my-games/games-list/game-item/game-item.compo
 import {GameDetailComponent} from "./my-games/game-detail/game-detail.component";
 
 import {ClubGameItemComponent} from "./club-games/club-game-item/club-game-item.component";
-import {ClubGamesListComponent} from "./club-games/club-games-list.component";
-
+import {ClubGamesListComponent} from "./club-games/club-games-list/club-games-list.component";
+import {NzListModule} from "ng-zorro-antd/list";
+import { ClubGamesComponent } from './club-games/club-games.component';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import {ClubGamesListComponent} from "./club-games/club-games-list.component";
     GameDescriptionComponent,
     GameItemComponent,
     GameDetailComponent,
-    FooterComponent
+    FooterComponent,
+    ClubGamesComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +52,9 @@ import {ClubGamesListComponent} from "./club-games/club-games-list.component";
     NzBreadCrumbModule,
     NzDividerModule,
     NzGridModule,
+    NzListModule,
+    NzDropDownModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

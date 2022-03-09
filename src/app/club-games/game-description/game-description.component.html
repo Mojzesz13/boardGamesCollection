@@ -1,1 +1,32 @@
-<p>game-description works!</p>
+<div nz-row nzJustify="start" nzAlign="middle">
+  <div nz-col nzSpan="8">
+    <img src="" alt="" />
+  </div>
+</div>
+<div nz-row nzJustify="start" nzAlign="middle">
+  <div nz-col nzSpan="12">
+    <h1> Game Name</h1>
+  </div>
+</div>
+<div nz-row nzJustify="start" nzAlign="middle">
+  <ng-container>
+  <button nz-button nz-dropdown [nzDropdownMenu]="menu">Manage Game</button>
+  <nz-dropdown-menu #menu="nzDropdownMenu">
+    <ul nz-menu>
+      <li nz-menu-item>To My Gaame</li>
+      <li nz-menu-item>Edit</li>
+      <li nz-menu-item>Delete</li>
+    </ul>
+  </nz-dropdown-menu>
+  </ng-container>
+</div>
+<div nz-row nzJustify="start" nzAlign="middle">
+  <div nz-col nzSpan="8">
+    Description
+  </div>
+</div>
+<div nz-row nzJustify="start" nzAlign="middle">
+  <div nz-col nzSpan="8">
+    Ingredients
+  </div>
+</div>

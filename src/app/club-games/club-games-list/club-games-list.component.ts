@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import {ClubGames} from "./club-game.model";
+import {ClubGames} from "../club-game.model";
 
 @Component({
   selector: 'club-games-list',
@@ -10,6 +10,7 @@ import {ClubGames} from "./club-game.model";
 export class ClubGamesListComponent {
 
   games: ClubGames[] = [
+    new ClubGames('Chaos in the old world', 'Strategy/Area Control', '/assets/images/chaos.jpg', 'Pawel'),
     new ClubGames('Chaos in the old world', 'Strategy/Area Control', '/assets/images/chaos.jpg', 'Pawel')
   ];
 }
