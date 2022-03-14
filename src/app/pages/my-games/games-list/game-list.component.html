@@ -1,0 +1,19 @@
+<div nz-row>
+  <div nz-col nzSpan="10">
+    <edit-games-list></edit-games-list>
+    <hr>
+
+    <nz-list nzBordered nzHeader="Header">
+      <a
+        *ngFor="let item of wishList"
+        href="#" style="cursor: pointer">
+      <nz-list-item >
+
+        <span nz-typography>&#8226;</span>
+       {{item.name}}
+      </nz-list-item>
+      </a>
+    </nz-list>
+
+  </div>
+</div>

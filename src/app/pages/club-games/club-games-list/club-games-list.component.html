@@ -1,6 +1,6 @@
 <nz-divider nzOrientation="left" nzText="Game List"></nz-divider>
 <div nz-row nzJustify="start" nzAlign="middle">
-  <div nz-col nzSpan="8" style="margin: 0 0 50px 100px">
+  <div nz-col nzSpan="20" style="margin: 0 0 50px 100px">
     <button nz-button nzType="primary">Add new Game</button>
   </div>
 </div>
@@ -10,8 +10,7 @@
   nz-row nzJustify="start" nzAlign="middle" style="margin-left: 10px">
 
   <div
-
-    nz-col nzSpan="32" style="border:1px solid black; padding: 0 10px 0 10px">
+    nz-col nzSpan="22" style="border:1px solid black; padding: 0 10px 0 10px">
     <a href="#">
     <nz-list nzItemLayout="vertical">
       <nz-list-item>
@@ -25,7 +24,7 @@
         </nz-list-item-meta>
         {{game.description}}
         <nz-list-item-extra>
-          <img width="250" alt="cover" [src]="game.coverPath"/>
+          <img width="100" alt="cover" [src]="game.coverPath"/>
         </nz-list-item-extra>
       </nz-list-item>
     </nz-list>
