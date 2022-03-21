@@ -1,8 +1,10 @@
 <nz-layout>
-  <app-header></app-header>
+  <app-header
+  (featureSelected)="setFeatureDisplayRenderCondition($event)"
+  ></app-header>
   <nz-content>
-    <my-games></my-games>
-  <club-games></club-games>
+    <my-games *ngIf="renderCondition[1].condition"></my-games>
+    <club-games *ngIf="renderCondition[2].condition"></club-games>
   </nz-content>
-<footer></footer>
+  <footer></footer>
 </nz-layout>

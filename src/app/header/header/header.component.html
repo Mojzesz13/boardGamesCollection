@@ -1,7 +1,7 @@
 <div>
   <ul nz-menu nzMode="horizontal">
-    <li nz-menu-item>Home Page</li>
-    <li nz-menu-item>My Games</li>
-    <li nz-menu-item>Club Games</li>
+    <li nz-menu-item (click)="onSelect(displayComponentEnum.None)">Home Page</li>
+    <li nz-menu-item (click)="onSelect(displayComponentEnum.MyGame)">My Games</li>
+    <li nz-menu-item (click)="onSelect(displayComponentEnum.ClubGame)">Club Games</li>
   </ul>
 </div>
