@@ -8,27 +8,9 @@
 <div
   *ngFor="let game of games"
   nz-row nzJustify="start" nzAlign="middle" style="margin-left: 10px">
-
   <div
-    nz-col nzSpan="22" style="border:1px solid black; padding: 0 10px 0 10px">
-    <a href="#">
-    <nz-list nzItemLayout="vertical">
-      <nz-list-item>
-        <nz-list-item-meta>
-          <nz-list-item-meta-title>
-           <h2>Title: {{game.title}} </h2>
-          </nz-list-item-meta-title>
-          <nz-list-item-meta-description>
-            <p>Owner: {{game.owner}}</p>
-          </nz-list-item-meta-description>
-        </nz-list-item-meta>
-        {{game.description}}
-        <nz-list-item-extra>
-          <img width="100" alt="cover" [src]="game.coverPath"/>
-        </nz-list-item-extra>
-      </nz-list-item>
-    </nz-list>
-    </a>
+    nz-col nzSpan="22" style="border:1px solid black; padding: 0 10px 0 10px; margin-top: 10px">
+    <club-games-item [game]="game" (click)="setGameToDisplay(game)"></club-games-item>
   </div>
 
 </div>

@@ -1,9 +1,12 @@
 <nz-divider nzOrientation="left" nzText="Club games"></nz-divider>
 <div nz-row nzJustify="space-around" nzAlign="top">
   <div nz-col class="gutter-row" [nzSpan]="8">
-    <club-games-list></club-games-list>
+    <club-games-list [games]="games" (gameToDisplay)="setThis($event)"></club-games-list>
   </div>
   <div nz-col nzAlign="top" class="gutter-row" style="margin-left: 10px" [nzSpan]="14">
-    <game-description></game-description>
+    <game-description
+      *ngIf="gameToDisplay.length > 0; else infoText"
+      [gameToDisplay]="gameToDisplay"></game-description>
+    <ng-template #infoText><p>Please select a game</p></ng-template>
   </div>
 </div>

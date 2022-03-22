@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import {Component, EventEmitter, Input, Output} from '@angular/core'
 import {ClubGames} from "../club-game.model";
 
 @Component({
@@ -8,9 +8,10 @@ import {ClubGames} from "../club-game.model";
 })
 
 export class ClubGamesListComponent {
+@Input() games: ClubGames[];
+@Output() gameToDisplay = new EventEmitter<ClubGames>()
 
-  games: ClubGames[] = [
-    new ClubGames('Chaos in the old world', 'Strategy/Area Control', '/assets/images/chaos.jpg', 'Pawel'),
-    new ClubGames('Chaos in the old world', 'Strategy/Area Control', '/assets/images/chaos.jpg', 'Pawel')
-  ];
+  setGameToDisplay(value: ClubGames) {
+    this.gameToDisplay.emit(value)
+  }
 }

@@ -15,8 +15,8 @@ import {MyGamesListComponent} from "./pages/my-games/my-games-list.component";
 import {GameListComponent} from "./pages/my-games/games-list/game-list.component";
 import {EditGameListComponent} from './pages/my-games/edit-game-list/edit-game-list.component';
 import {GameDescriptionComponent} from './pages/club-games/game-description/game-description.component';
-import {HeaderComponent} from './header/header/header.component';
-import {FooterComponent} from './footer/footer.component';
+import {HeaderComponent} from './pages/header/header/header.component';
+import {FooterComponent} from './pages/footer/footer.component';
 import {GameItemComponent} from "./pages/my-games/games-list/game-item/game-item.component";
 
 import {GameDetailComponent} from "./pages/my-games/game-detail/game-detail.component";

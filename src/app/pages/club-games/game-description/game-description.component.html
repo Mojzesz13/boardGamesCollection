@@ -1,7 +1,10 @@
 <div nz-row nzJustify="start" nzAlign="middle">
   <div nz-col nzSpan="12">
-    <h1> Game Name</h1>
+    <h1>{{gameToDisplay[0].title}}</h1>
   </div>
+</div>
+<div *ngIf="gameToDisplay[0].coverPath.length > 0" nz-row nzJustify="start" nzAlign="middle">
+  <img width="500" alt="cover" [src]="gameToDisplay[0].coverPath"/>
 </div>
 <div nz-row nzJustify="start" nzAlign="middle">
   <ng-container>
@@ -17,11 +20,11 @@
 </div>
 <div nz-row nzJustify="start" nzAlign="middle">
   <div nz-col nzSpan="8">
-    Description
+    {{gameToDisplay[0].description}}
   </div>
 </div>
 <div nz-row nzJustify="start" nzAlign="middle">
   <div nz-col nzSpan="8">
-    Ingredients
+    Owner: {{gameToDisplay[0].owner}}
   </div>
 </div>

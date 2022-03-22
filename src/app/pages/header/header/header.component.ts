@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {DisplayTypeEnum} from "../../Enums/display-type.enum";
+import {DisplayTypeEnum} from "../../../Enums/display-type.enum";
 
 @Component({
   selector: 'app-header',
