@@ -3,18 +3,23 @@
     <form nz-form [nzLayout]="'inline'">
       <nz-form-item>
           <nz-input-group nzPrefixIcon="user">
-            <input formControlName="gameTitle" nz-input placeholder="Game title" />
+            <input #titleInput formControlName="gameTitle" nz-input placeholder="Game title" />
           </nz-input-group>
       </nz-form-item>
-      <nz-form-item>
+      <nz-form-item style="margin: 10px 0 10px 0">
           <nz-input-group nzPrefixIcon="lock">
-            <input formControlName="password" nz-input type="password" placeholder="Password" />
+            <input #typeInput formControlName="gameType" nz-input placeholder="Game type" />
+          </nz-input-group>
+      </nz-form-item>
+      <nz-form-item style="margin: 10px 0 10px 0">
+          <nz-input-group nzPrefixIcon="lock">
+            <input #yearInput formControlName="gameType" nz-input placeholder="year type" />
           </nz-input-group>
       </nz-form-item>
       <nz-form-item>
         <nz-form-control>
-          <button nz-button nzType="primary">Add</button>
-          <button nz-button nzType="default">Clear</button>
+          <button nz-button nzType="primary" (click)="onAddItem()">Add</button>
+          <button style="margin: 0 5px 0 5px" nz-button nzType="default">Clear</button>
           <button nz-button nzType="primary" nzDanger>Delete</button>
         </nz-form-control>
       </nz-form-item>
