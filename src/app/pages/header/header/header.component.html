@@ -1,7 +1,9 @@
-<div>
+<div style="display: flex; flex-direction: row; justify-content: space-between" >
   <ul nz-menu nzMode="horizontal">
     <li nz-menu-item (click)="onSelect(displayComponentEnum.None)">Home Page</li>
     <li nz-menu-item (click)="onSelect(displayComponentEnum.MyGame)">My Games</li>
     <li nz-menu-item (click)="onSelect(displayComponentEnum.ClubGame)">Club Games</li>
+
   </ul>
+  <div appDropdown style="margin-right: 50px; width: 150px">DropDown</div>
 </div>

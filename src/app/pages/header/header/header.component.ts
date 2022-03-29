@@ -11,8 +11,13 @@ export class HeaderComponent {
   @Input() test1: boolean;
   @Output() featureSelected = new EventEmitter <string>();
 
+  isOpen = false
+
   displayComponentEnum = DisplayTypeEnum;
 
+  openDropDown(): boolean {
+    return !this.isOpen
+  }
 
   onSelect(feature: DisplayTypeEnum) {
     this.featureSelected.emit(feature)

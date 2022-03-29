@@ -3,3 +3,17 @@
 nz-header {
   background-color: #ff0000;
 }
+
+.open {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

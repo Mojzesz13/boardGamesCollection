@@ -30,6 +30,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NzTypographyModule} from "ng-zorro-antd/typography";
 import {NzFormModule} from "ng-zorro-antd/form";
 import {NzInputModule} from "ng-zorro-antd/input";
+import { DropdownDirective } from './pages/shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {NzInputModule} from "ng-zorro-antd/input";
     GameItemComponent,
     GameDetailComponent,
     FooterComponent,
-    ClubGamesComponent
+    ClubGamesComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
